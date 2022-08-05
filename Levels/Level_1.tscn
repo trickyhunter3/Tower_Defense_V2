@@ -1,0 +1,398 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Blocks/Iron.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Tilemap/characters.png" type="Texture" id=2]
+[ext_resource path="res://Levels/PathFollow2D.gd" type="Script" id=3]
+
+[sub_resource type="Curve2D" id=1]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 333, 27, 0, 0, 0, 0, 297, 27, 0, 0, 0, 0, 297, 153, 0, 0, 0, 0, 261, 153, 0, 0, 0, 0, 261, 27, 0, 0, 0, 0, 225, 27, 0, 0, 0, 0, 225, 153, 0, 0, 0, 0, 189, 153, 0, 0, 0, 0, 189, 27, 0, 0, 0, 0, 153, 27, 0, 0, 0, 0, 153, 153, 0, 0, 0, 0, 117, 153, 0, 0, 0, 0, 117, 27, 0, 0, 0, 0, 81, 27, 0, 0, 0, 0, 81, 153, 0, 0, 0, 0, 27, 153, 0, 0, 0, 0, 27, 117, 0, 0, 0, 0, 45, 117, 0, 0, 0, 0, 45, 81, 0, 0, 0, 0, 27, 81, 0, 0, 0, 0, 27, 45, 0, 0, 0, 0, 45, 45, 0, 0, 0, 0, 45, -9 )
+}
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 2 )
+region = Rect2( 156, 50, 24, 25 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 2 )
+region = Rect2( 182, 50, 24, 25 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 2 )
+region = Rect2( 208, 50, 24, 25 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 2 )
+region = Rect2( 182, 50, 24, 25 )
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [ SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+} ]
+
+[node name="Level_1" type="Node2D"]
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource( 1 )
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2( 333, 27 )
+rotation = -3.14159
+rotate = false
+loop = false
+script = ExtResource( 3 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Path2D/PathFollow2D"]
+rotation = -3.14159
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 6 )
+animation = "idle"
+frame = 3
+playing = true
+
+[node name="Blocks" type="Node2D" parent="."]
+
+[node name="Iron" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 9, 9 )
+
+[node name="Iron37" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 9, 27 )
+
+[node name="Iron38" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 9, 45 )
+
+[node name="Iron39" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 9, 63 )
+
+[node name="Iron40" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 9, 81 )
+
+[node name="Iron41" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 9, 99 )
+
+[node name="Iron42" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 9, 117 )
+
+[node name="Iron43" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 9, 135 )
+
+[node name="Iron44" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 9, 153 )
+
+[node name="Iron46" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 315, 45 )
+
+[node name="Iron47" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 315, 63 )
+
+[node name="Iron48" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 315, 81 )
+
+[node name="Iron49" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 315, 99 )
+
+[node name="Iron50" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 315, 117 )
+
+[node name="Iron51" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 315, 135 )
+
+[node name="Iron53" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 279, 27 )
+
+[node name="Iron54" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 279, 45 )
+
+[node name="Iron55" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 279, 63 )
+
+[node name="Iron56" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 279, 81 )
+
+[node name="Iron57" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 279, 99 )
+
+[node name="Iron58" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 279, 117 )
+
+[node name="Iron59" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 279, 135 )
+
+[node name="Iron60" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 243, 45 )
+
+[node name="Iron61" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 243, 63 )
+
+[node name="Iron62" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 243, 81 )
+
+[node name="Iron63" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 243, 99 )
+
+[node name="Iron64" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 243, 117 )
+
+[node name="Iron65" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 243, 135 )
+
+[node name="Iron66" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 243, 153 )
+
+[node name="Iron67" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 207, 27 )
+
+[node name="Iron68" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 207, 45 )
+
+[node name="Iron69" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 207, 63 )
+
+[node name="Iron70" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 207, 81 )
+
+[node name="Iron71" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 207, 99 )
+
+[node name="Iron72" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 207, 117 )
+
+[node name="Iron73" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 207, 135 )
+
+[node name="Iron74" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 171, 45 )
+
+[node name="Iron75" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 171, 63 )
+
+[node name="Iron76" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 171, 81 )
+
+[node name="Iron77" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 171, 99 )
+
+[node name="Iron78" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 171, 117 )
+
+[node name="Iron79" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 171, 135 )
+
+[node name="Iron80" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 171, 153 )
+
+[node name="Iron81" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 135, 18 )
+
+[node name="Iron82" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 135, 36 )
+
+[node name="Iron83" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 135, 54 )
+
+[node name="Iron84" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 135, 72 )
+
+[node name="Iron85" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 135, 90 )
+
+[node name="Iron86" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 135, 108 )
+
+[node name="Iron87" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 135, 126 )
+
+[node name="Iron88" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 99, 45 )
+
+[node name="Iron89" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 99, 63 )
+
+[node name="Iron90" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 99, 81 )
+
+[node name="Iron91" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 99, 99 )
+
+[node name="Iron92" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 99, 117 )
+
+[node name="Iron93" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 99, 135 )
+
+[node name="Iron94" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 99, 153 )
+
+[node name="Iron95" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 63, 27 )
+
+[node name="Iron96" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 63, 45 )
+
+[node name="Iron97" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 63, 63 )
+
+[node name="Iron98" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 63, 81 )
+
+[node name="Iron99" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 63, 99 )
+
+[node name="Iron100" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 63, 117 )
+
+[node name="Iron101" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 63, 135 )
+
+[node name="Iron102" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 63, 27 )
+
+[node name="Iron103" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 63, 45 )
+
+[node name="Iron104" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 63, 63 )
+
+[node name="Iron105" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 63, 81 )
+
+[node name="Iron106" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 63, 99 )
+
+[node name="Iron107" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 63, 117 )
+
+[node name="Iron108" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 63, 135 )
+
+[node name="Iron109" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 45, 135 )
+
+[node name="Iron110" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 45, 135 )
+
+[node name="Iron111" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 27, 99 )
+
+[node name="Iron112" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 27, 99 )
+
+[node name="Iron113" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 45, 63 )
+
+[node name="Iron114" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 45, 63 )
+
+[node name="Iron115" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 27, 27 )
+
+[node name="Iron116" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 27, 27 )
+
+[node name="Iron52" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 315, 153 )
+
+[node name="Iron2" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 27, 9 )
+
+[node name="Iron4" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 63, 9 )
+
+[node name="Iron5" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 81, 9 )
+
+[node name="Iron6" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 99, 9 )
+
+[node name="Iron7" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 117, 9 )
+
+[node name="Iron8" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 135, 9 )
+
+[node name="Iron9" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 153, 9 )
+
+[node name="Iron10" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 171, 9 )
+
+[node name="Iron11" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 189, 9 )
+
+[node name="Iron12" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 207, 9 )
+
+[node name="Iron13" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 225, 9 )
+
+[node name="Iron14" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 243, 9 )
+
+[node name="Iron15" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 261, 9 )
+
+[node name="Iron16" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 279, 9 )
+
+[node name="Iron17" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 297, 9 )
+
+[node name="Iron18" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 315, 9 )
+
+[node name="Iron19" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 9, 171 )
+
+[node name="Iron20" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 27, 171 )
+
+[node name="Iron21" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 45, 171 )
+
+[node name="Iron22" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 63, 171 )
+
+[node name="Iron23" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 81, 171 )
+
+[node name="Iron24" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 99, 171 )
+
+[node name="Iron25" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 117, 171 )
+
+[node name="Iron26" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 135, 171 )
+
+[node name="Iron27" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 153, 171 )
+
+[node name="Iron28" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 171, 171 )
+
+[node name="Iron29" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 189, 171 )
+
+[node name="Iron30" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 207, 171 )
+
+[node name="Iron31" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 225, 171 )
+
+[node name="Iron32" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 243, 171 )
+
+[node name="Iron33" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 261, 171 )
+
+[node name="Iron34" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 279, 171 )
+
+[node name="Iron35" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 297, 171 )
+
+[node name="Iron36" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 315, 171 )
