@@ -39,7 +39,7 @@ script = ExtResource( 2 )
 scale = Vector2( 0.375, 0.36 )
 frames = SubResource( 5 )
 animation = "idle"
-frame = 1
+frame = 3
 playing = true
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]

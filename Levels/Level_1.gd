@@ -11,6 +11,6 @@ func _process(delta):
 
 func _on_Bird_Timer_timeout():
 	var bird = BIRD_LOAD.instance()
-	bird.Set_enemy(100,40)
+	bird.Set_enemy(100,150)
 	get_node("Path2D").add_child(bird)
 	pass
