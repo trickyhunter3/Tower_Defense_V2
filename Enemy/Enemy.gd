@@ -1,19 +1,17 @@
-extends PathFollow2D
+extends KinematicBody2D
 
 var health
-var speed
 
-func _ready():
-	pass
-
-func _process(delta):
-	set_offset(get_offset() + speed * delta)
-	
-	if get_unit_offset() == 1:
-		queue_free()
-	pass
-
-func Set_enemy(health, speed):
+func Set_health(health: int):
 	self.health = health
-	self.speed = speed
 	pass
+
+func Take_damage(amount: int):
+	health -= amount
+	if health <= 0:
+		Die()
+	self.modulate = Color(1,0,0)
+	pass
+
+func Die():
+	queue_free()
