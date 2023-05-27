@@ -1,0 +1,18 @@
+res://default_env.tres::1685198578::791918300e6c50c7b0871c81f1e27a14::Sky,
+res://icon.png::1685134593::47313fa4c47a9963fddd764e1ec6e4a8::CompressedTexture2D
+res://Wave Controller.gd::1685134658::65b27e2c314a4b608a3ce969040f9b31::GDScript
+res://Wave Controller.tscn::1685134658::eeb40a5ca2e401606c1b7ff248bf85b5::PackedScene,Node,Timer
+res://Blocks/Iron.tscn::1685134658::7104b655ff5c437fd2ed8c970646c243::PackedScene,RectangleShape2D,StaticBody2D,CollisionShape2D,Sprite2D
+res://Enemy/Bird.tscn::1685134658::688834c14c3fe5e305ea192facda0341::PackedScene,RectangleShape2D,AtlasTexture,SpriteFrames,PathFollow2D,CharacterBody2D,CollisionShape2D,AnimatedSprite2D
+res://Enemy/Bomb.tscn::1685134658::5cdde9b93cf78ac313e2293bb3226e45::PackedScene,RectangleShape2D,AtlasTexture,SpriteFrames,PathFollow2D,CharacterBody2D,CollisionShape2D,AnimatedSprite2D
+res://Enemy/Enemy.gd::1685134658::c9624a0232082c8bb4d64bf06c791243::GDScript
+res://Enemy/Enemy_move.gd::1685197703::068d6a8b78f6b59d542e82532fc83935::GDScript
+res://Levels/Level_1.gd::1685134658::643e4493b654c76f75d6ff61cb67f6ad::GDScript
+res://Levels/Level_1.tscn::1685198578::b4daf540f2dbbcaa30d6929158589035::PackedScene,Curve2D,Node2D,Path2D
+res://Levels/PathFollow2D.gd::1685134658::dd09a638a47e48f2dcd8d983ca07adcc::GDScript
+res://Tilemap/characters.png::1685134593::afaffe8bfeb3e51d263c9b55ad93b5ad::CompressedTexture2D
+res://Tilemap/characters_packed.png::1685134593::457c0a7f86e70ac9030adc9afdb46c6f::CompressedTexture2D
+res://Tilemap/tiles.png::1685134593::cdf5bd01fdef424808dd87bba77a7da2::CompressedTexture2D
+res://Tilemap/tiles_packed.png::1685134593::856bc53ef0408e71bf5663288d9f1fa0::CompressedTexture2D
+res://Towers/Tower.gd::1685134658::da1bc55a851574df8284224ae14f4f05::GDScript
+res://Towers/Tower_1.tscn::1685134658::e48550af9e53168900baccaeb1a043d7::PackedScene,AtlasTexture,SpriteFrames,CircleShape2D,Area2D,AnimatedSprite2D,CollisionShape2D

@@ -14,8 +14,8 @@ func _process(delta):
 
 
 func _on_Bird_Timer_timeout():
-	var bird = BIRD_LOAD.instance()
-	bird.get_node("KinematicBody2D").Set_health(BIRD_HEALTH_SPEED[0])
+	var bird = BIRD_LOAD.instantiate()
+	bird.get_node("CharacterBody2D").Set_health(BIRD_HEALTH_SPEED[0])
 	bird.Set_speed(BIRD_HEALTH_SPEED[1])
 	get_node("Path2D").add_child(bird)
 	pass

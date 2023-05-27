@@ -1,0 +1,25 @@
+2a60927148abd1d33b818b535e306557
+::res://::1685197360
+default_env.tres::Environment::4139805003585752115::1685134718::0::1::::<><>::
+icon.png::CompressedTexture2D::4290590090922380135::1685134593::1685134705::1::::<><>::
+Wave Controller.gd::GDScript::-1::1685134658::0::1::::<>Node<>::
+Wave Controller.tscn::PackedScene::-1::1685134658::0::1::::<><>::res://Wave Controller.gd
+::res://Blocks/::1685134593
+Iron.tscn::PackedScene::-1::1685134658::0::1::::<><>::res://Tilemap/tiles.png
+::res://Enemy/::1685134593
+Bird.tscn::PackedScene::-1::1685134658::0::1::::<><>::res://Tilemap/characters.png<>res://Enemy/Enemy.gd<>res://Enemy/Enemy_move.gd
+Bomb.tscn::PackedScene::-1::1685134658::0::1::::<><>::res://Tilemap/characters.png<>res://Enemy/Enemy.gd<>res://Enemy/Enemy_move.gd
+Enemy.gd::GDScript::-1::1685134658::0::1::::<>CharacterBody2D<>::
+Enemy_move.gd::GDScript::-1::1685134658::0::1::::<>PathFollow2D<>::
+::res://Levels/::1685134718
+Level_1.gd::GDScript::-1::1685134658::0::1::::<>Node2D<>::
+Level_1.tscn::PackedScene::441447156671363340::1685134718::0::1::::<><>::res://Blocks/Iron.tscn<>res://Towers/Tower_1.tscn<>res://Levels/Level_1.gd
+PathFollow2D.gd::GDScript::-1::1685134658::0::1::::<>PathFollow2D<>::
+::res://Tilemap/::1685134705
+characters.png::CompressedTexture2D::8423259575714316182::1685134593::1685134705::1::::<><>::
+characters_packed.png::CompressedTexture2D::8903006967421442589::1685134593::1685134705::1::::<><>::
+tiles.png::CompressedTexture2D::9111248164919327312::1685134593::1685134705::1::::<><>::
+tiles_packed.png::CompressedTexture2D::5101531510400311241::1685134593::1685134705::1::::<><>::
+::res://Towers/::1685134593
+Tower.gd::GDScript::-1::1685134658::0::1::::<>Area2D<>::
+Tower_1.tscn::PackedScene::-1::1685134658::0::1::::<><>::res://Tilemap/characters.png<>res://Towers/Tower.gd

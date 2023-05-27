@@ -1,0 +1,27 @@
+{
+	"disabled_build_options": {
+		"disable_3d": true,
+		"disable_3d_physics": true,
+		"openxr": false
+	},
+	"disabled_classes": [
+		"Bone2D",
+		"CPUParticles2D",
+		"CanvasGroup",
+		"CanvasModulate",
+		"GPUParticles2D",
+		"HTTPRequest",
+		"Joint2D",
+		"Light2D",
+		"LightOccluder2D",
+		"Node3D",
+		"RayCast2D",
+		"RemoteTransform2D",
+		"ShapeCast2D",
+		"Skeleton2D",
+		"SkeletonIK3D",
+		"TouchScreenButton",
+		"VisibleOnScreenNotifier2D"
+	],
+	"type": "build_profile"
+}

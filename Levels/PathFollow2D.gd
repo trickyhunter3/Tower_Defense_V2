@@ -1,6 +1,6 @@
 extends PathFollow2D
 
-export(int) var runSpeed = 40
+@export var runSpeed: int = 40
 
 
 func _process(delta):
